@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex items-end justify-between mb-12 border-b border-neutral-800 pb-4">
+    <h2 class="text-4xl font-bold text-white uppercase tracking-tighter">
+        <span class="text-red-600">/</span>Mission_Logs
+    </h2>
+    <span class="text-neutral-500 text-sm hidden md:inline-block">Loaded {{ projects|length }} repositories</span>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% for project in projects %}
+    <div class="group relative bg-neutral-900 border border-neutral-800 hover:border-red-600 transition-all duration-300 hover:shadow-[0_0_20px_rgba(220,38,38,0.15)] flex flex-col h-full">
+        
+        <div class="absolute top-0 left-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+
+        <div class="p-6 flex-grow">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="text-xl font-bold text-white group-hover:text-red-500 transition-colors truncate">
+                    {{ project.name }}
+                </h3>
+                <span class="flex items-center gap-1 text-xs font-bold text-neutral-400 bg-neutral-800 px-2 py-1">
+                    <span class="text-red-600">★</span> {{ project.stars }}
+                </span>
+            </div>
+
+            <p class="text-neutral-400 text-sm leading-relaxed mb-6 line-clamp-3">
+                {{ project.description or "No intelligence data available for this sector." }}
+            </p>
+
+            <div class="text-xs font-mono text-red-500 uppercase tracking-widest mb-2">
+                Stack_Trace:
+            </div>
+            <div class="inline-block border border-neutral-700 px-2 py-1 text-xs text-neutral-300">
+                {{ project.stack or "UNKNOWN" }}
+            </div>
+        </div>
+
+        <div class="border-t border-neutral-800 p-4 flex gap-4 bg-neutral-950/50">
+            <a href="{{ project.url }}" target="_blank" class="flex-1 text-center text-xs font-bold uppercase tracking-wider text-white bg-neutral-800 hover:bg-red-600 py-3 transition-colors duration-300">
+                Source_Code
+            </a>
+            <a href="/project/{{ project.id }}" class="flex-1 text-center text-xs font-bold uppercase tracking-wider text-neutral-400 border border-neutral-700 hover:text-white hover:border-white py-3 transition-colors duration-300">
+                Data_Link
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

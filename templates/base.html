@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Shivam_Portfolio_v1.0{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar for that cyber feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #171717;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #dc2626;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ef4444;
+        }
+
+        /* Add this inside the <style> tag in base.html */
+        .glitch-hover:hover {
+            text-shadow: 2px 0 #fff, -2px 0 #ff003c;
+            animation: glitch 0.5s infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 0 #fff, -2px 0 #ff003c;
+            }
+
+            25% {
+                text-shadow: -2px 0 #fff, 2px 0 #ff003c;
+            }
+
+            50% {
+                text-shadow: 2px 0 #fff, -2px 0 #ff003c;
+            }
+
+            75% {
+                text-shadow: -2px 0 #fff, 2px 0 #ff003c;
+            }
+
+            100% {
+                text-shadow: 2px 0 #fff, -2px 0 #ff003c;
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="bg-neutral-950 text-gray-300 font-mono antialiased flex flex-col min-h-screen selection:bg-red-600 selection:text-white">
+
+    <div class="h-1 w-full bg-gradient-to-r from-red-600 via-red-500 to-black"></div>
+
+    <nav class="border-b border-neutral-800 bg-neutral-900/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/"
+                class="text-xl font-bold text-white tracking-widest hover:text-red-500 transition duration-300 uppercase">
+                <span class="text-red-600 mr-2">></span>ByteMeShiv
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold">
+                <a href="/" class="hover:text-red-500 transition-colors duration-300">/Home</a>
+                <a href="/projects" class="hover:text-red-500 transition-colors duration-300">/Projects</a>
+                <a href="https://linkedin.com/in/shivamkushwaha1" target="_blank"
+                    class="text-red-600 hover:text-white transition-colors duration-300">[Linkedin]</a>
+                <a href="static/resume.pdf"
+                    class="bg-red-600 text-white px-4 py-1 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-300 flex items-center">
+                    Download_CV <span class="ml-2">↓</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-12 flex-grow relative">
+        <div class="absolute inset-0 pointer-events-none opacity-5"
+            style="background-image: radial-gradient(#444 1px, transparent 1px); background-size: 20px 20px;">
+        </div>
+
+        <div class="relative z-10">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+    <footer class="border-t border-neutral-800 bg-neutral-950 py-12 border-b-4 border-b-black">
+        <div class="container mx-auto px-6 text-center">
+
+            <h3
+                class="text-white text-xl font-bold uppercase tracking-widest mb-6 border-b border-neutral-800 inline-block pb-2">
+                Establish_Uplink
+            </h3>
+
+            <div class="flex justify-center gap-8 mb-10">
+                <a href="mailto:your-email@example.com" class="group flex flex-col items-center gap-2">
+                    <div
+                        class="w-10 h-10 border border-neutral-700 group-hover:border-red-600 group-hover:bg-red-600/10 flex items-center justify-center transition-all duration-300">
+                        <span class="text-neutral-500 group-hover:text-red-500 text-lg">@</span>
+                    </div>
+                    <span
+                        class="text-[10px] text-neutral-500 uppercase tracking-widest group-hover:text-white transition">Email</span>
+                </a>
+
+                <a href="https://linkedin.com/in/your-profile" target="_blank"
+                    class="group flex flex-col items-center gap-2">
+                    <div
+                        class="w-10 h-10 border border-neutral-700 group-hover:border-blue-500 group-hover:bg-blue-500/10 flex items-center justify-center transition-all duration-300">
+                        <span class="text-neutral-500 group-hover:text-blue-500 text-lg">in</span>
+                    </div>
+                    <span
+                        class="text-[10px] text-neutral-500 uppercase tracking-widest group-hover:text-white transition">LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/bytemeshiv" target="_blank" class="group flex flex-col items-center gap-2">
+                    <div
+                        class="w-10 h-10 border border-neutral-700 group-hover:border-white group-hover:bg-white/10 flex items-center justify-center transition-all duration-300">
+                        <span class="text-neutral-500 group-hover:text-white text-lg">Git</span>
+                    </div>
+                    <span
+                        class="text-[10px] text-neutral-500 uppercase tracking-widest group-hover:text-white transition">GitHub</span>
+                </a>
+            </div>
+
+            <p class="text-neutral-700 text-xs uppercase tracking-[0.2em] font-mono">
+                System Status: <span
+                    class="text-green-500 font-bold drop-shadow-[0_0_5px_rgba(34,197,94,0.8)] animate-pulse">Online</span>
+                <span class="mx-2 text-neutral-800">|</span>
+                © 2025 Shivam
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

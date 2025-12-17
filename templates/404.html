@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}ERROR_404 // LOST_SIGNAL{% endblock %}
+
+{% block content %}
+<div class="flex flex-col items-center justify-center h-[60vh] text-center">
+    <h1 class="text-9xl font-black text-neutral-800 select-none relative">
+        404
+        <span class="absolute top-0 left-0 text-red-600 opacity-50 blur-sm animate-pulse">404</span>
+    </h1>
+    
+    <div class="bg-red-600 text-black font-bold px-2 py-1 text-xs uppercase tracking-widest mb-6">
+        CRITICAL_ERROR: SECTOR_NOT_FOUND
+    </div>
+    
+    <p class="text-neutral-400 max-w-md mb-8">
+        The requested resource has been moved, deleted, or incinerated. 
+        Navigation systems are offline.
+    </p>
+
+    <a href="/" class="border border-white text-white px-8 py-3 hover:bg-white hover:text-black uppercase tracking-widest transition duration-300">
+        Reboot_System (Home)
+    </a>
+</div>
+{% endblock %}
