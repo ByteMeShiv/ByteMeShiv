@@ -31,7 +31,7 @@
 ![Celery](https://img.shields.io/badge/Celery-2F9E44?logo=celery&style=flat-square)
 ![Postgres](https://img.shields.io/badge/Postgres-316192?logo=postgres&style=flat-square)
 ![Redis](https://img.shields.io/badge/Redis-D82C20?logo=redis&style=flat-square)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?logo=rabbitmq&style=flat-square) 
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-Ready-FF6600?logo=rabbitmq&style=flat-square)__
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&style=flat-square)
 
 ---
