@@ -41,8 +41,11 @@
 - **[Eveai 💜](https://github.com/ByteMeShiv/eveai)**  
   Your everyday AI assistant, making life smarter and easier.
   
-- **[NoteSpark⚡](https://github.com/ByteMeShiv/eveai)**  
-  Your everyday AI assistant, making life smarter and easier.
+- **[NoteSpark⚡](https://github.com/ByteMeShiv/notespark)**  
+  Ignite your productivity with AI-powered smart note-taking.
+  
+- **[Syncro⚡](https://github.com/ByteMeShiv/Syncro)**  
+  A high-performance team workspace that automates deadline monitoring and member notifications through a distributed Django-Celery architecture.
 
 - **[Resume-analyze](https://github.com/ByteMeShiv/resume-analyzer)**  
   Analyze, review, and enhance your resume using AI.
