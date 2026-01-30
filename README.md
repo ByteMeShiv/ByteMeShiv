@@ -28,11 +28,11 @@
 ![Gemini API](https://img.shields.io/badge/-GeminiAPI-FF4C3B?logo=google&logoColor=white)
 ![PineconeDB](https://img.shields.io/badge/-PineconeDB-34A853?logo=google&logoColor=white)
 ![SQL](https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-2F9E44?logo=celery&style=flat-square)
-![Postgres](https://img.shields.io/badge/Postgres-316192?logo=postgres&style=flat-square)
-![Redis](https://img.shields.io/badge/Redis-D82C20?logo=redis&style=flat-square)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?logo=rabbitmq&style=flat-square)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&style=flat-square)
+![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-FF6600?logo=rabbitmq&style=flat-square)
+![Redis](https://img.shields.io/badge/-Redis-D82C20?logo=redis&style=flat-square)
+![Postgres](https://img.shields.io/badge/-Postgres-316192?logo=postgres&style=flat-square)
+![Celery](https://img.shields.io/badge/-Celery-2F9E44?logo=celery&style=flat-square)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes&style=flat-square)
 
 ---
 
