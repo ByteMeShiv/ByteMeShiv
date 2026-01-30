@@ -33,13 +33,16 @@
 
 ## 🚀 Featured Projects
 
-- **[eveai](https://github.com/ByteMeShiv/eveai)**  
+- **[Eveai 💜](https://github.com/ByteMeShiv/eveai)**  
+  Your everyday AI assistant, making life smarter and easier.
+  
+- **[NoteSpark⚡](https://github.com/ByteMeShiv/eveai)**  
   Your everyday AI assistant, making life smarter and easier.
 
-- **[resume-analyzer](https://github.com/ByteMeShiv/resume-analyzer)**  
+- **[Resume-analyze](https://github.com/ByteMeShiv/resume-analyzer)**  
   Analyze, review, and enhance your resume using AI.
 
-- **[code-commentor](https://github.com/ByteMeShiv/code-commentor)**  
+- **[Code-Commentor](https://github.com/ByteMeShiv/code-commentor)**  
   Automate code documentation with smart, AI-powered comments.
 
 ---
