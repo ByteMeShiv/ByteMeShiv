@@ -65,7 +65,7 @@ Check out my latest certifications on [LinkedIn](https://www.linkedin.com/in/shi
 
 - [GitHub](https://github.com/ByteMeShiv)
 - [LinkedIn](https://www.linkedin.com/in/shivamkushwaha1)
-- [Portfolio](https://bytemeshiv.github.io/Portfolio/)
+- [Portfolio](https://byte-me-shiv.vercel.app/)
 
 ---
 
