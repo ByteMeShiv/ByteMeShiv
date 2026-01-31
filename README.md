@@ -42,15 +42,15 @@
   Your everyday AI assistant, making life smarter and easier.
   
 - **[NoteSpark⚡](https://github.com/ByteMeShiv/notespark)**  
-  Ignite your productivity with AI-powered smart note-taking.
+  Ignite your productivity with AI-powered Smart note-taking.
   
-- **[Syncro⚡](https://github.com/ByteMeShiv/Syncro)**  
+- **[Syncro 👥](https://github.com/ByteMeShiv/Syncro)**  
   A high-performance team workspace that automates deadline monitoring and member notifications through a distributed Django-Celery architecture.
 
-- **[Resume-analyze](https://github.com/ByteMeShiv/resume-analyzer)**  
+- **[Resume-analyze 📃](https://github.com/ByteMeShiv/resume-analyzer)**  
   Analyze, review, and enhance your resume using AI.
 
-- **[Code-Commentor](https://github.com/ByteMeShiv/code-commentor)**  
+- **[Code-Commentor 🧑🏼‍💻](https://github.com/ByteMeShiv/code-commentor)**  
   Automate code documentation with smart, AI-powered comments.
 
 ---
