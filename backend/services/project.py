@@ -16,8 +16,10 @@ class ProjectService:
         # 2. Fetch from GitHub
         url = f"https://api.github.com/users/{settings.GITHUB_USERNAME}/repos"
         params = {"sort": "updated", "per_page": 9}
-        
+
         resp = await self.client.get(url, params=params, headers=self.headers)
+        if resp.status_code == 404:
+            raise HTTPException(status_code=404, detail="Project not found")
         resp.raise_for_status()
         data = resp.json()
 
