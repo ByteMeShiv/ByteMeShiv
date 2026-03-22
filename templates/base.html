@@ -1,139 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Shivam_Portfolio_v1.0{% endblock %}</title>
+    <title>{% block title %}SYS_CORE // BYTE_ME_SHIV{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/swup@4"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        theme: {
+                            500: 'var(--theme-500)',
+                            600: 'var(--theme-600)',
+                            glow: 'var(--theme-glow)',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        /* Custom scrollbar for that cyber feel */
-        ::-webkit-scrollbar {
-            width: 8px;
+        :root {
+            --theme-500: #ef4444;
+            --theme-600: #dc2626;
+            --theme-glow: rgba(220, 38, 38, 0.4);
+        }
+        [data-theme="green"] {
+            --theme-500: #22c55e;
+            --theme-600: #16a34a;
+            --theme-glow: rgba(22, 163, 74, 0.4);
+        }
+        [data-theme="blue"] {
+            --theme-500: #3b82f6;
+            --theme-600: #2563eb;
+            --theme-glow: rgba(37, 99, 235, 0.4);
         }
 
-        ::-webkit-scrollbar-track {
-            background: #171717;
+        /* CRT Scanline Overlay */
+        .crt-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+            z-index: 9999;
         }
 
-        ::-webkit-scrollbar-thumb {
-            background: #dc2626;
+        /* Swup Transition States */
+        .transition-fade {
+            transition: 0.3s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        html.is-animating .transition-fade {
+            opacity: 0;
+            transform: translateY(10px);
         }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: #ef4444;
-        }
-
-        /* Add this inside the <style> tag in base.html */
-        .glitch-hover:hover {
-            text-shadow: 2px 0 #fff, -2px 0 #ff003c;
-            animation: glitch 0.5s infinite;
-        }
-
-        @keyframes glitch {
-            0% {
-                text-shadow: 2px 0 #fff, -2px 0 #ff003c;
-            }
-
-            25% {
-                text-shadow: -2px 0 #fff, 2px 0 #ff003c;
-            }
-
-            50% {
-                text-shadow: 2px 0 #fff, -2px 0 #ff003c;
-            }
-
-            75% {
-                text-shadow: -2px 0 #fff, 2px 0 #ff003c;
-            }
-
-            100% {
-                text-shadow: 2px 0 #fff, -2px 0 #ff003c;
-            }
-        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: var(--theme-600); }
     </style>
 </head>
 
-<body
-    class="bg-neutral-950 text-gray-300 font-mono antialiased flex flex-col min-h-screen selection:bg-red-600 selection:text-white">
+<body class="bg-[#050505] text-gray-300 font-mono antialiased flex flex-col min-h-screen selection:bg-theme-600 selection:text-white relative">
 
-    <div class="h-1 w-full bg-gradient-to-r from-red-600 via-red-500 to-black"></div>
+    <div class="crt-overlay"></div>
+    <div class="h-1 w-full bg-gradient-to-r from-theme-600 via-theme-500 to-black z-50 fixed top-0 transition-colors duration-500"></div>
 
-    <nav class="border-b border-neutral-800 bg-neutral-900/50 backdrop-blur-md sticky top-0 z-50">
+    <nav class="border-b border-neutral-900 bg-[#050505]/90 backdrop-blur-md sticky top-0 z-40 mt-1">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/"
-                class="text-xl font-bold text-white tracking-widest hover:text-red-500 transition duration-300 uppercase">
-                <span class="text-red-600 mr-2">></span>ByteMeShiv
+            <a href="/" class="text-xl font-bold text-white tracking-widest hover:text-theme-500 transition duration-300 uppercase">
+                <span class="text-theme-600 animate-pulse">></span>BMS_OS
             </a>
-            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold">
-                <a href="/" class="hover:text-red-500 transition-colors duration-300">/Home</a>
-                <a href="/projects" class="hover:text-red-500 transition-colors duration-300">/Projects</a>
-                <a href="https://linkedin.com/in/shivamkushwaha1" target="_blank"
-                    class="text-red-600 hover:text-white transition-colors duration-300">[Linkedin]</a>
-                <a href="https://www.linkedin.com/in/shivamkushwaha1/overlay/1770705434045/single-media-viewer/?profileId=ACoAAFAR22kBXlz2me1SQL0Egs21PA--AaB2HBs" target="_blank"
-                    class="bg-red-600 text-white px-4 py-1 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-300 flex items-center">
-                    Download_CV <span class="ml-2">↓</span>
-                </a>
+
+            <div class="flex items-center gap-6">
+                <div class="flex border border-neutral-800 bg-black p-1 space-x-1">
+                    <button onclick="setTheme('red')" class="w-4 h-4 bg-red-600 hover:bg-red-500 focus:outline-none"></button>
+                    <button onclick="setTheme('green')" class="w-4 h-4 bg-green-600 hover:bg-green-500 focus:outline-none"></button>
+                    <button onclick="setTheme('blue')" class="w-4 h-4 bg-blue-600 hover:bg-blue-500 focus:outline-none"></button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-bold">
+                    <a href="/" class="hover:text-theme-500 transition">/Root</a>
+                    <a href="/projects" class="hover:text-theme-500 transition">/Nodes</a>
+                    <a href="https://linkedin.com/in/shivamkushwaha1" target="_blank" class="text-neutral-500 hover:text-white transition">LINKEDIN</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main class="container mx-auto px-6 py-12 flex-grow relative">
-        <div class="absolute inset-0 pointer-events-none opacity-5"
-            style="background-image: radial-gradient(#444 1px, transparent 1px); background-size: 20px 20px;">
-        </div>
-
-        <div class="relative z-10">
-            {% block content %}
-            {% endblock %}
-        </div>
+    <main id="swup" class="transition-fade container mx-auto px-6 py-12 flex-grow relative z-10">
+        {% block content %}{% endblock %}
     </main>
-    <footer class="border-t border-neutral-800 bg-neutral-950 py-12 border-b-4 border-b-black">
-        <div class="container mx-auto px-6 text-center">
 
-            <h3
-                class="text-white text-xl font-bold uppercase tracking-widest mb-6 border-b border-neutral-800 inline-block pb-2">
-                Establish_Uplink
-            </h3>
-
-            <div class="flex justify-center gap-8 mb-10">
-                <a href="mailto:your-email@example.com" class="group flex flex-col items-center gap-2">
-                    <div
-                        class="w-10 h-10 border border-neutral-700 group-hover:border-red-600 group-hover:bg-red-600/10 flex items-center justify-center transition-all duration-300">
-                        <span class="text-neutral-500 group-hover:text-red-500 text-lg">@</span>
-                    </div>
-                    <span
-                        class="text-[10px] text-neutral-500 uppercase tracking-widest group-hover:text-white transition">Email</span>
-                </a>
-
-                <a href="https://linkedin.com/in/your-profile" target="_blank"
-                    class="group flex flex-col items-center gap-2">
-                    <div
-                        class="w-10 h-10 border border-neutral-700 group-hover:border-blue-500 group-hover:bg-blue-500/10 flex items-center justify-center transition-all duration-300">
-                        <span class="text-neutral-500 group-hover:text-blue-500 text-lg">in</span>
-                    </div>
-                    <span
-                        class="text-[10px] text-neutral-500 uppercase tracking-widest group-hover:text-white transition">LinkedIn</span>
-                </a>
-
-                <a href="https://github.com/bytemeshiv" target="_blank" class="group flex flex-col items-center gap-2">
-                    <div
-                        class="w-10 h-10 border border-neutral-700 group-hover:border-white group-hover:bg-white/10 flex items-center justify-center transition-all duration-300">
-                        <span class="text-neutral-500 group-hover:text-white text-lg">Git</span>
-                    </div>
-                    <span
-                        class="text-[10px] text-neutral-500 uppercase tracking-widest group-hover:text-white transition">GitHub</span>
-                </a>
-            </div>
-
-            <p class="text-neutral-700 text-xs uppercase tracking-[0.2em] font-mono">
-                System Status: <span
-                    class="text-green-500 font-bold drop-shadow-[0_0_5px_rgba(34,197,94,0.8)] animate-pulse">Online</span>
-                <span class="mx-2 text-neutral-800">|</span>
-                © 2025 Shivam
-            </p>
+    <footer class="border-t border-neutral-900 bg-[#050505] py-8 z-10 relative">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-widest text-neutral-600">
+            <p>Connection: <span class="text-theme-500 animate-pulse">SECURE</span></p>
+            <p id="sys-clock" class="font-bold text-neutral-400 my-4 md:my-0">00:00:00 UTC</p>
+            <p>V_1.0.0 // © 2026</p>
         </div>
     </footer>
-</body>
 
+    <script>
+        // Init Swup
+        const swup = new Swup();
+
+        // Theme Manager
+        function setTheme(color) {
+            document.documentElement.setAttribute('data-theme', color);
+            localStorage.setItem('sys-theme', color);
+        }
+        setTheme(localStorage.getItem('sys-theme') || 'red');
+
+        // Re-apply theme after Swup navigates
+        swup.hooks.on('page:view', () => {
+            setTheme(localStorage.getItem('sys-theme') || 'red');
+            if (typeof initTerminal === 'function') initTerminal(); // Restart terminal if on home
+        });
+
+        // Live Clock
+        setInterval(() => {
+            document.getElementById('sys-clock').innerText = new Date().toUTCString().split(' ')[4] + ' UTC';
+        }, 1000);
+    </script>
+</body>
 </html>
