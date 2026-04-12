@@ -1,0 +1,99 @@
+<div align="center">
+
+# ✦ Shivam Kushwaha ✦
+### `[ ByteMeShiv ]`
+
+*Code is creation. Like the cosmos, it is a delicate balance of chaos and order.* 🌌
+
+</div>
+
+---
+
+## 🌗 The Philosophy
+Embracing the spirit of **Ardhnareshwar**—the beautiful, cosmic duality of existence—I approach software engineering as a balance of forces. I blend the raw logic of backend systems with the creative intuition required to build elegant, scalable solutions. 
+
+I am transitioning from a passionate student to a dedicated **Backend & Cloud Security Engineer**, currently navigating secure Linux environments (Pop!_OS) and distributed architectures.
+
+---
+
+## 🛠️ The Tech Constellation
+
+<details>
+<summary><b> 🪐 Orbit 1: Core Languages & Logic</b> <i>(Click to expand)</i></summary>
+<br>
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+</details>
+
+<details>
+<summary><b> 🛰️ Orbit 2: Cloud, DevOps & OS</b> <i>(Click to expand)</i></summary>
+<br>
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+</details>
+
+<details>
+<summary><b> ☄️ Orbit 3: Data & Distributed Systems</b> <i>(Click to expand)</i></summary>
+<br>
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
+
+</details>
+
+<details>
+<summary><b> 🌌 Orbit 4: AI & Machine Learning</b> <i>(Click to expand)</i></summary>
+<br>
+
+![GenAI](https://img.shields.io/badge/GenAI-4B8BBE?style=for-the-badge&logo=google&logoColor=white)
+![Gemini API](https://img.shields.io/badge/Gemini_API-FF4C3B?style=for-the-badge&logo=google&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white)
+
+</details>
+
+---
+
+## 🚀 Active Missions (Projects)
+
+> *“Keep reaching for the stars—both in your code and in the sky.”*
+
+| Project | Designation | Tech Stack | Status |
+| :--- | :--- | :--- | :--- |
+| **[Syncro](https://github.com/ByteMeShiv/Syncro)** | Distributed Team Workspace | `Django` `Celery` `Redis` | 🟢 Online |
+| **[Eveai](https://github.com/ByteMeShiv/eveai)** | Everyday AI Assistant | `GenAI` `Python` | 🟢 Online |
+| **[NoteSpark](https://github.com/ByteMeShiv/notespark)** | AI-Powered Smart Notes | `GenAI` `MongoDB` | 🟢 Online |
+| **[Code-Commentor](https://github.com/ByteMeShiv/code-commentor)** | Automated Documentation Pipeline | `Python` `APIs` | 🟡 Refining |
+
+---
+
+## 🔭 Beyond the Terminal
+
+When I hit <kbd>Ctrl</kbd> + <kbd>C</kbd> on my servers, I am:
+* **Stargazing:** Fascinated by astrophysics, planetary science, and the sheer scale of the cosmos.
+* **Cooking:** Treating the kitchen like an alchemy lab. Cooking is just chemistry with delicious results.
+* **Reading:** Absorbing everything from deep technical documentation to sci-fi and philosophy.
+
+---
+
+<div align="center">
+
+### 📡 Establish Contact
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shivamkushwaha1)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://byte-me-shiv.vercel.app/)
+
+<br>
+
+<img src="https://github-readme-stats.vercel.app/api?username=ByteMeShiv&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F472B6&text_color=93C5FD&icon_color=C084FC" alt="GitHub Stats" width="80%">
+
+</div>
